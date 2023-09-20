@@ -5,7 +5,7 @@ import useSWR from "swr"
 import { DisplayTodo } from "@/components"
 
 const fetcher = (url:string):any => fetch(url).then(r => r.json())
-
+ 
 const Todos = () => {
     const [todos, setTodos] = useState<any[]>([])
     const [todo, setTodo] = useState<string>('')
